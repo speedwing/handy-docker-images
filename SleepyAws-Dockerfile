@@ -1,0 +1,6 @@
+FROM ubuntu:xenial
+
+RUN apt-get update; apt-get install -y awscli \
+    && rm -rf /var/lib/apt/lists/*
+
+ENTRYPOINT ["sleep", "999999"]
