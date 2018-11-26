@@ -1,6 +1,6 @@
 FROM ubuntu:xenial
 
-RUN apt-get update; apt-get install -y awscli \
+RUN apt-get update; apt-get install -y awscli groff \
     && rm -rf /var/lib/apt/lists/*
 
 ENTRYPOINT ["sleep", "999999"]
