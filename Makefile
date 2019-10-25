@@ -1,4 +1,4 @@
 .PHONY: all
 
-week1:
+all:
 	docker build -t speedwing/sleepy:latest -f sleepy-Dockerfile .
